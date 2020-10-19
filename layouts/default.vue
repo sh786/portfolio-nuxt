@@ -1,5 +1,5 @@
 <template>
-  <div class="bg min-h-screen">
+  <div class="bg min-h-screen flex flex-col items-center">
     <Navbar />
     <Nuxt />
   </div>

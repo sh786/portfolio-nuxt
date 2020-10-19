@@ -1,18 +1,15 @@
 <template>
   <div class="h-minus-nav overflow-y-scroll sm:w-11/12 xl:max-w-screen-xl px-6">
-    <PageHeader title="works" subtitle="welcome to my talk space" />
+    <PageHeader title="film" subtitle="checkout my drone footage" />
     <PageItem
-      type='work'
-      v-for="work in works"
-      v-bind="work"
-      :key="work.title"
+      type='film'
+      v-for="film in films"
+      v-bind="film"
+      :key="film.title"
      >
       <template v-slot:icons>
         <span class='icon-wrapper text-white'>
-          <a :href="work.url" :name="`${work.title} | URL`" target="_blank"><fa :icon="['fas', 'globe-americas']" /></a>
-        </span>
-        <span class='icon-wrapper text-white'>
-          <a :href="work.github" :name="`${work.title} | Github`" target="_blank"><fa :icon="['fab', 'github']" /></a>
+          <a :href="film.url" :name="`${film.title} | URL`" target="_blank"><fa :icon="['fab', 'youtube']" /></a>
         </span>
       </template>
     </PageItem>
@@ -27,16 +24,16 @@ import PageHeader from '../../components/PageHeader.vue';
 import PageItem from '../../components/PageItem.vue';
 
 export default Vue.extend({
-  name: 'Works',
+  name: 'Film',
   components: {
     PageHeader,
     PageItem
   },
   setup() {
     const { $content } = useContext();
-    const works = useAsync(() => $content('en/works').sortBy('date', 'desc').fetch());
+    const films = useAsync(() => $content('en/films').sortBy('date', 'desc').fetch());
 
-    return { works };
+    return { films };
   },
 });
 </script>

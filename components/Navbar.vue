@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w flex flex-row items-center h-60">
+  <div class="w-full flex flex-row items-center h-60">
     <div>
       <NuxtLink to="/" @click="setSelectedPage('home')"><span class="max-h text-32 text-primary px-5">s<span class="text-accent">/</span>h</span></NuxtLink>
     </div>

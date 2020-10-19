@@ -1,7 +1,10 @@
 <template>
   <div class="h-minus-nav flex flex-col items-center justify-center">
-    <h1 class="text-primary cover-title">sam <span class="text-accent">/</span> hamburger</h1>
-    <p id="typed-text"></p>
+    <div class='main-wrapper'>
+      <h1 class="text-primary cover-title">sam <span class="text-accent">/</span> hamburger</h1>
+      <p id="typed-text"></p>
+    </div>
+    
   </div>
 </template>
 
@@ -44,6 +47,10 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+.main-wrapper {
+  height: 348px;
+}
+
 .cover-title {
   font-size: 64px;
 }

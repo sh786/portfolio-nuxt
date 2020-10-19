@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col">
-    <span class='px-10 page-title text-white'>{{ title }}</span>
-    <span class='px-10 page-subtitle text-white'>{{ subtitle }}</span>
-    <span class="mx-10 my-3 divider"></span>
+    <span class='page-title text-white'>{{ title }}</span>
+    <span class='page-subtitle text-white'>{{ subtitle }}</span>
+    <span class="my-3 divider"></span>
   </div>
 </template>
 

@@ -11,11 +11,15 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@nuxt/content": "^1.9.0",
+    "@nuxt/content-theme-docs": "^0.7.2",
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/composition-api": "^0.13.5",
     "@nuxtjs/sitemap": "^2.4.0",
+    "@tailwindcss/typography": "^0.2.0",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.14.7",
+    "prism-themes": "^1.4.1",
+    "reading-time": "^1.2.0",
     "typeit": "^7.0.4"
   },
   "devDependencies": {
