@@ -106,6 +106,7 @@ export default Vue.extend({
   width: 100vw;
   color: $primary;
   background-color: $bg;
+  z-index: 10 !important;
 
   div {
     width: 100%;
