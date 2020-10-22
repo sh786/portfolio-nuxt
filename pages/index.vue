@@ -4,7 +4,18 @@
       <h1 class="text-primary cover-title">sam <span class="text-accent">/</span> hamburger</h1>
       <p id="typed-text"></p>
     </div>
-    
+    <client-only>
+        <Particles
+          color="#00ffff"
+          :particles-number="60"
+          shapeType="image"
+          :particle-size="9"
+          movement-direction="top"
+          lines-color="#dedede"
+          :line-linked="false"
+          :move-speed="0.75"
+        />
+      </client-only>
   </div>
 </template>
 
@@ -14,8 +25,11 @@ import Vue from 'vue'
 import { onMounted } from '@nuxtjs/composition-api';
 import TypeIt from 'typeit';
 
+import Particles from '../components/Particles.vue';
+
 export default Vue.extend({
   name: 'Home',
+  components: { Particles },
   setup() {
     onMounted(() => {
       new TypeIt("#typed-text", { speed: 50 })
@@ -49,6 +63,7 @@ export default Vue.extend({
 <style lang="scss">
 .main-wrapper {
   height: 348px;
+  z-index: 10 !important;
 }
 
 .cover-title {
@@ -64,10 +79,24 @@ export default Vue.extend({
   font-size: 24px;
   width: 100%;
   text-align: center;
+  z-index: 10 !important;
 
   a {
     text-decoration: underline;
     color: $primary;
+    z-index: 10 !important;
   }
+}
+
+div[id^="particles-instance-"] {
+  height: calc(100vh - 60px) !important;
+  width: 100vw !important;
+  position: fixed !important;
+  top: 60px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: rgba($color: $bg, $alpha: 0.4);
+  z-index: 0 !important;
 }
 </style>
