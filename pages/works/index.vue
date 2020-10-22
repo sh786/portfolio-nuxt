@@ -8,10 +8,10 @@
       :key="work.title"
      >
       <template v-slot:icons>
-        <span class='icon-wrapper text-white'>
+        <span v-if="work.url" class='icon-wrapper text-white'>
           <a :href="work.url" :name="`${work.title} | URL`" target="_blank"><fa :icon="['fas', 'globe-americas']" /></a>
         </span>
-        <span class='icon-wrapper text-white'>
+        <span v-if="work.github" class='icon-wrapper text-white'>
           <a :href="work.github" :name="`${work.title} | Github`" target="_blank"><fa :icon="['fab', 'github']" /></a>
         </span>
       </template>
