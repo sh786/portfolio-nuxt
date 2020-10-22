@@ -6,10 +6,10 @@
     <div class="ml-auto">
       <template v-if="!isSmall">
         <ul class="nav-list text-24 text-primary">
-          <NuxtLink to="/works" @click="setSelectedPage('works')"><li :class="{'selected': selectedPage === 'works'}">works</li></NuxtLink>
-          <NuxtLink to="/blog" @click="setSelectedPage('blog')"><li :class="{'selected': selectedPage === 'blog'}"><li :class="{'selected': selectedPage === 'blog'}">blog</li></NuxtLink>
-          <NuxtLink to="/film" @click="setSelectedPage('film')"><li :class="{'selected': selectedPage === 'film'}"><li :class="{'selected': selectedPage === 'film'}">film</li></NuxtLink>
-          <NuxtLink to="/uses" @click="setSelectedPage('uses')"><li :class="{'selected': selectedPage === 'uses'}"><li :class="{'selected': selectedPage === 'uses'}">uses</li></NuxtLink>
+          <NuxtLink to="/works" @click.native="setSelectedPage('works')"><li :class="{'selected': selectedPage === 'works'}">works</li></NuxtLink>
+          <NuxtLink to="/blog" @click.native="setSelectedPage('blog')"><li :class="{'selected': selectedPage === 'blog'}"><li :class="{'selected': selectedPage === 'blog'}">blog</li></NuxtLink>
+          <NuxtLink to="/film" @click.native="setSelectedPage('film')"><li :class="{'selected': selectedPage === 'film'}"><li :class="{'selected': selectedPage === 'film'}">film</li></NuxtLink>
+          <NuxtLink to="/uses" @click.native="setSelectedPage('uses')"><li :class="{'selected': selectedPage === 'uses'}"><li :class="{'selected': selectedPage === 'uses'}">uses</li></NuxtLink>
         </ul>
       </template>
       <template v-else>
