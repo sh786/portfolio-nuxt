@@ -1,5 +1,5 @@
 <template>
-  <div class='text-white h-minus-nav overflow-y-scroll sm:w-11/12 xl:max-w-screen-xl px-6'>
+  <div class='text-white h-minus-nav overflow-y-scroll w-full xl:max-w-screen-xl px-6'>
     <PageHeader v-if="blog" :title="blog.title" />
     <nuxt-content :document="blog"></nuxt-content>
   </div>
