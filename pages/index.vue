@@ -63,7 +63,7 @@ export default Vue.extend({
 <style lang="scss">
 .main-wrapper {
   height: 348px;
-  z-index: 10 !important;
+  z-index: 8 !important;
 }
 
 .cover-title {
