@@ -21,7 +21,7 @@
     "nuxt-breakpoints": "^1.1.9",
     "prism-themes": "^1.4.1",
     "reading-time": "^1.2.0",
-    "typeit": "^7.0.4",
+    "typeit": "^7.0.4"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
