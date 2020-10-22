@@ -19,11 +19,9 @@
     "core-js": "^3.6.5",
     "nuxt": "^2.14.7",
     "nuxt-breakpoints": "^1.1.9",
-    "nuxt-ssr-screen-size": "github:hugojerez/nuxt-ssr-screen-size",
     "prism-themes": "^1.4.1",
     "reading-time": "^1.2.0",
     "typeit": "^7.0.4",
-    "vue-burger-menu": "^2.0.5"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
