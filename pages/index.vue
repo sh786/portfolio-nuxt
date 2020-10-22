@@ -96,7 +96,8 @@ div[id^="particles-instance-"] {
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden !important;
-  background: rgba($color: $bg, $alpha: 0.4);
+  background: rgba($color: $bg, $alpha: 0.1);
+  opacity: 0.5;
   z-index: 0 !important;
 }
 </style>
