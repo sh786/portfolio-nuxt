@@ -56,7 +56,7 @@ export default {
   fontawesome: {
     component: 'fa',
     icons: {
-      solid: ['faGlobeAmericas'],
+      solid: ['faGlobeAmericas', 'faHamburger', 'faTimes'],
       brands: ['faGithub', 'faYoutube'],
     },
   },
@@ -66,10 +66,20 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/style-resources',
+    'nuxt-breakpoints',
   ],
 
   styleResources: {
     scss: ['~/assets/_variables.scss'],
+  },
+
+  breakpoints: {
+    // default options
+    sm: 680,
+    options: {
+      polyfill: true,
+      throttle: 200
+    }
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)

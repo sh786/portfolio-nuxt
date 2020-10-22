@@ -53,6 +53,10 @@ export default Vue.extend({
 
 .cover-title {
   font-size: 64px;
+
+  @media screen and (max-width: 639px) {
+    font-size: 44px;
+  }
 }
 
 #typed-text {

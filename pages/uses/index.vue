@@ -11,6 +11,7 @@
         <p>Apple Magic Keyoboard</p>
         <p>iPhone X</p>
         <p>Nulaxy Portable Laptop Stand</p>
+        <p>DJI Mavic Pro Drone</p>
       </div>
       <div>
         <span class='section-header'>apps</span>

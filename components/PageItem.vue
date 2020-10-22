@@ -1,5 +1,5 @@
 <template>
-  <div class="item-wrapper flex flex-row p-4 mt-4 mb-8">
+  <div class="item-wrapper flex flex-col md:flex-row p-4 mt-4 mb-8">
     <div class="flex flex-col">
       <span class='item-title text-white'>{{ title }}</span>
       <template v-if='isWork || isFilm'>
@@ -15,7 +15,7 @@
         <span class='item-description text-white'>Reading Time: {{ blogReadingTime }} minutes</span>
       </template>
     </div>
-    <div class='ml-auto flex flex-row items-center'>
+    <div class='ml-auto mt-2 md:mt-0 flex flex-row items-center'>
       <slot name="icons"></slot>
     </div>
   </div>
