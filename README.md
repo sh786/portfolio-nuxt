@@ -1,4 +1,6 @@
-# portfolio-nuxt
+# samburger.dev portfolio
+
+https://samburger.dev
 
 ## Build Setup
 
