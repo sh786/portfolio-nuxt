@@ -1,6 +1,6 @@
 <template>
   <div class="h-minus-nav overflow-y-scroll sm:w-11/12 xl:max-w-screen-xl px-6">
-    <PageHeader title="works" subtitle="welcome to my talk space" />
+    <PageHeader title="works" subtitle="checkout some stuff I built" />
     <PageItem
       type='work'
       v-for="work in works"
